@@ -25,7 +25,7 @@
                     <h2>{{$data['title']}}</h2>
                     <p class="mb-0">{{$data['body']}}</p>
                     <div class="form-group mt-1" style="width: 50%;">
-                        <input type="text" class="form-control mb-1" placeholder="Email" id="emailA" name="emailA">
+                        <input type="text" class="form-control mb-1" value="<?= Auth::user()->email ?>" placeholder="Email" id="emailA" name="emailA">
                     </div>
                     <div class="form-group" style="width: 50%;">
                         <input type="password" class="form-control mb-1" placeholder="Password" id="passA" name="passA">
